@@ -29,7 +29,7 @@ class CreateEmployeesTable extends Migration
             $table->integer('status');
             $table->timestamps();
         });
-        DB::statement("ALTER TABLE hms_employees AUTO_INCREMENT = 1000;");
+     
     }
 
     /**
