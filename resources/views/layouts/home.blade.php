@@ -195,21 +195,7 @@
                 <span class="badge badge-danger" id="notify"></span>
                 </a>
                 @endif
-                @if($task == 'Diabetic Predictions')
-                <a class="nav-link active" href="diabetic-predictions" >Diabetic Predictions</a>
-                @else
-                <a class="nav-link" href="diabetic-predictions" >Diabetic Predictions</a>
-                @endif
-                @if($task == '01 Predictions')
-                <a class="nav-link active" href="01-predictions" >Disease 1 Predictions</a>
-                @else
-                <a class="nav-link" href="01-predictions" >Disease 1 Predictions</a>
-                @endif
-                @if($task == '02 Predictions')
-                <a class="nav-link active" href="02-predictions" >Disease 2 Predictions</a>
-                @else
-                <a class="nav-link" href="02-predictions" >Disease 2 Predictions</a>
-                @endif
+                
             </div>
             @endif
             @if($role == 6)
