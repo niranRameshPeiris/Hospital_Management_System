@@ -8,8 +8,8 @@
         <select class="form-control" id="disease_temp" name="disease_temp" required>
             <option value="1">Cardiologist</option>
             <option value="2">Immunologist</option>
-            <option value="3">sick3</option>
-            <option value="4">sick4</option>
+            <option value="3">Psychiatrist</option>
+            <option value="4">Dermatologist</option>
         </select>
     </div>
   </div>
