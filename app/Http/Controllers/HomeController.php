@@ -70,7 +70,7 @@ class HomeController extends Controller
                 }
             }
         else if($request->id == 3){
-            $docs = Doctors::where('status',1)->where('specialty','Immunologist')->take(1)->get();
+            $docs = Doctors::where('status',1)->where('specialty','Psychiatrist')->take(1)->get();
                 if(count($docs) == 0){
                 }
                 else{
@@ -82,7 +82,7 @@ class HomeController extends Controller
                 }
             }
         else if($request->id == 4){
-            $docs = Doctors::where('status',1)->where('specialty','Immunologist')->take(1)->get();
+            $docs = Doctors::where('status',1)->where('specialty','Dermatologist')->take(1)->get();
                 if(count($docs) == 0){
                 }
                 else{
