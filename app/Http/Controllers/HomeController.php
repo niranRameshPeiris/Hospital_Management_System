@@ -69,6 +69,30 @@ class HomeController extends Controller
                     }
                 }
             }
+        else if($request->id == 3){
+            $docs = Doctors::where('status',1)->where('specialty','Immunologist')->take(1)->get();
+                if(count($docs) == 0){
+                }
+                else{
+                    foreach($docs as $doc)
+                    {
+                        $id = $doc->id;
+                        $name = $doc->name;
+                    }
+                }
+            }
+        else if($request->id == 4){
+            $docs = Doctors::where('status',1)->where('specialty','Immunologist')->take(1)->get();
+                if(count($docs) == 0){
+                }
+                else{
+                    foreach($docs as $doc)
+                    {
+                        $id = $doc->id;
+                        $name = $doc->name;
+                    }
+                }
+            }
 
         $ret = $id ."#".$name;
         return $ret;
