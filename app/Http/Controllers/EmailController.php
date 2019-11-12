@@ -10,18 +10,11 @@ class EmailController extends Controller
 {
     public function handel(Request $request)
     {
-        $name = null;
-        if ($request->hasFile('image'))
-        {
-            $image = $request->file('image');
-            $name = 'img-'.$request->patient.'-'.now()->timestamp.'.png';
-            $destinationPath = public_path('/ipresults');
-            $image->move($destinationPath, $name);
-        }
+        
 
         $result = new IPResults();
         $result->patient = $request->patient;
-        $result->image = $name;
+        $result->image = $request->image;
         $result->date = $request->date;
         $result->accuracy = $request->accuracy;
         $result->result = $request->result;
