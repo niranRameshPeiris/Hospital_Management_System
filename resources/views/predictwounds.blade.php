@@ -20,7 +20,7 @@
       <tr>
         <td>{{$patient->patient}}</td>
         <td>
-        <img src="ipresults/{{$patient->image}}"  height="100" width="100">
+        <img src="{{$patient->image}}"  height="100" width="100">
         </td>
         <td>{{$patient->date}} </td>
         <td>{{$patient->accuracy}}</td>
